@@ -1,0 +1,11 @@
+.validetePhone header {
+  font-size: 1.6em;
+  margin: 10px 0;
+}
+.validetePhone .row {
+  margin: 10px 0;
+}
+.validetePhone .row .btn-validate {
+  display: block;
+  margin: 0 auto;
+}
