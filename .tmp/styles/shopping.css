@@ -1,0 +1,30 @@
+section header {
+  line-height: 50px;
+  background-color: #d3ecf0;
+  position: relative;
+  font-size: 14px;
+}
+section header button {
+  position: absolute;
+  right: 2%;
+  border: 0;
+  background-color: transparent;
+}
+section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+section ul li {
+  border-bottom: 1px solid #1960ae;
+  line-height: 50px;
+}
+section ul li button {
+  position: absolute;
+  border: 0;
+  background-color: transparent;
+  color: red;
+}
+section ul li:nth-last-child(1) {
+  border-bottom: 0;
+}

@@ -59,7 +59,9 @@ module.exports = function (grunt) {
                     ".tmp/styles/global.css": "<%= web.app %>/assets/less/global.less",
                     ".tmp/styles/fontawesome.css": "./bower_components/fontawesome/less/font-awesome.less",
                     ".tmp/styles/jquery-ui.css": "./bower_components/jqueryui/themes/base/jquery-ui.css",
-                    ".tmp/styles/validatePhone.css": "<%= web.app %>/assets/less/validatePhone.less"
+                    //".tmp/styles/bootstrap-datetimepicker.min.css": "./bower_components/bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css",
+                    ".tmp/styles/validatePhone.css": "<%= web.app %>/assets/less/validatePhone.less",
+                    ".tmp/styles/shopping.css": "<%= web.app %>/assets/less/shopping.less"
                 }
             }
         },
@@ -161,13 +163,6 @@ module.exports = function (grunt) {
                         dest: '<%= web.dist %>/resources/fonts',
                         src: ['assets/fonts/*' ]
                     },
-                    // 拷贝fontasesome字体到build目录
-                    {
-                        expand: true,
-                        cwd: 'bower_components/fontawesome/fonts',
-                        src: ['*.*'],
-                        dest: '<%= web.dist %>/resources/fonts'
-                    },
                     // 拷贝bootstrap字体到build目录
                     {
                         expand: true,
@@ -178,7 +173,7 @@ module.exports = function (grunt) {
                     // 拷贝jquery js到build目录
                     {
                         expand: true,
-                        cwd: 'bower_components/jquery/dist/',
+                        cwd: 'bower_components/jquery',
                         src: ['jquery.*'],
                         dest: '<%= web.dist %>/resources/js'
                     },
@@ -188,6 +183,18 @@ module.exports = function (grunt) {
                         cwd: 'bower_components/bootstrap/dist/js',
                         src: ['bootstrap.min.js'],
                         dest: '<%= web.dist %>/resources/js'
+                    },
+                    {
+                        expand: true,
+                        cwd: 'bower_components/bootstrap-datetimepicker/build/js',
+                        src: ['bootstrap-datetimepicker.min.js'],
+                        dest: '<%= web.dist %>/resources/js'
+                    },
+                    {
+                        expand: true,
+                        cwd: 'bower_components/bootstrap-datetimepicker/build/css',
+                        src: ['bootstrap-datetimepicker.min.css'],
+                        dest: '<%= web.dist %>/resources/css'
                     }
                 ]
             },

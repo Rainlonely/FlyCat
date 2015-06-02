@@ -1,16 +1,9 @@
 {
   "name": "flyCat",
   "version": "0.0.0",
-  "dependencies": {
-    "bootstrap": "~3.1.1",
-    "fontawesome": "~4.3.0",
-    "jqueryui": "~1.10.4",
-    "less": "~1.7.0"
-  },
+  "dependencies": {},
   "devDependencies": {
-    "bootstrap-tagsinput": "~0.4.2",
-    "bootstrap-select": "~1.6.5",
-    "bootstrap-chosen": "~1.0.1",
-    "chosen": "~1.4.2"
+    "bootstrap": "~3.3.4",
+    "bootstrap-datetimepicker": "~0.0.11"
   }
 }

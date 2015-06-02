@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>我要预定</title>
+    <link rel="stylesheet" type="text/css" href="../resources/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../resources/css/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet" type="text/css" href="../resources/css/shopping.min.css">
+</head>
+
+<body>
+    <section class="container">
+        <header class="row">
+            <h4 class="col-xs-4">已选行程</h4>
+            <button>提交</button>
+        </header>
+        <ul>
+            <li>暂无行程，请选择目的地</li>
+            <li class="row">
+                <span class="col-xs-3 country">美国</span>
+                <span class="col-xs-7 date"> 2015-4-04 至 2015－5-14</span>
+                <button class="col-xs-2">移除</button>
+            </li>
+        </ul>
+    </section>
+    <section class="container">
+        <header class="row">
+            <h4 class="col-xs-4">选择目的地</h4>
+        </header>
+        <ul>
+            <li class="row datepicker"><span class="col-xs-12">美国</span></li>
+            <li class="row datepicker"><span class="col-xs-12">新加坡</span></li>
+            <li class="row datepicker"><span class="col-xs-12">香港</span></li>
+            <li class="row datepicker"><span class="col-xs-12">法国</span></li>
+            <li class="row datepicker"><span class="col-xs-12">俄罗斯</span></li>
+            <li class="row datepicker"><span class="col-xs-12">老挝</span></li>
+            <li class="row datepicker"><span class="col-xs-12">越南</span></li>
+        </ul>
+    </section>
+    <div id="datetimepicker12" style="width: 100%;"></div>
+    <script type="text/javascript" src="../resources/js/jquery.min.js"></script>
+    <script type="text/javascript" src="../resources/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../resources/js/bootstrap-datetimepicker.min.js"></script>
+    <script type="text/javascript">
+var datetimepicker;
+
+$(function () {
+  $('.datepicker').on('click', function() {
+  	  if(datetimepicker) {
+  	  	datetimepicker.datetimepicker('remove');
+  	  }
+	  datetimepicker = $('#datetimepicker12').datetimepicker({
+	    inline: true,
+	    language: 'zh-CN',
+	    minView: 2
+	  })
+	  .on('changeDate', function (ev) {
+	  	$(this).datetimepicker('remove');
+	  });  
+	  $('.day').append('<span class="money">￥10</span>');
+  	  $('.day').on('click', function () {
+  	  	$('#datetimepicker12').trigger('changeDate');
+  	  });
+  	// }
+  });
+});
+</script>
+</body>
+
+</html>
