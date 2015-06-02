@@ -59,7 +59,7 @@ module.exports = function (grunt) {
                     ".tmp/styles/global.css": "<%= web.app %>/assets/less/global.less",
                     ".tmp/styles/fontawesome.css": "./bower_components/fontawesome/less/font-awesome.less",
                     ".tmp/styles/jquery-ui.css": "./bower_components/jqueryui/themes/base/jquery-ui.css",
-                    //".tmp/styles/bootstrap-datetimepicker.min.css": "./bower_components/bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css",
+                    ".tmp/styles/datetimepicker.min.css": "./bower_components/smalot-bootstrap-datetimepicker/less/datetimepicker.less",
                     ".tmp/styles/validatePhone.css": "<%= web.app %>/assets/less/validatePhone.less",
                     ".tmp/styles/shopping.css": "<%= web.app %>/assets/less/shopping.less"
                 }
@@ -186,7 +186,7 @@ module.exports = function (grunt) {
                     },
                     {
                         expand: true,
-                        cwd: 'bower_components/bootstrap-datetimepicker/build/js',
+                        cwd: 'bower_components/smalot-bootstrap-datetimepicker/js',
                         src: ['bootstrap-datetimepicker.min.js'],
                         dest: '<%= web.dist %>/resources/js'
                     },
@@ -215,7 +215,7 @@ module.exports = function (grunt) {
             },
 
             // 拷贝js文件从源文件目录到build目录
-            js : {
+            js: {
                 files: [
                     {
                         expand: true,
@@ -315,26 +315,12 @@ module.exports = function (grunt) {
         //'autoprefixer',
         'copy:dist',
         'copy:html',
+        'copy:js',
         'copy:styles',
         // 'uglify',
         'cssmin',
         // 'htmlmin'
     ]);
-
-      // 注册build组任务
-    grunt.registerTask('build-dev', [
-        'clean:dist',
-        'concurrent:dist',
-        'less',
-        //'autoprefixer',
-        'copy:dist',
-        'copy:html',
-        'copy:styles',
-        'uglify',
-        'copy:stylesbuild',
-        //'htmlmin'
-    ]);
-
 
     // 注册default任务
  grunt.registerTask('default', ['browserSync', 'watch']);
