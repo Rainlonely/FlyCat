@@ -1,1 +1,80 @@
-section header{line-height:50px;background-color:#d3ecf0;position:relative;font-size:14px}section header button{position:absolute;right:2%;border:0;background-color:transparent}section ul{list-style:none;padding:0;margin:0}section ul li{border-bottom:1px solid #1960ae;line-height:50px}section ul li button{position:absolute;border:0;background-color:transparent;color:red}section ul li:nth-last-child(1){border-bottom:0}
+section header {
+  line-height: 50px;
+  background-color: #d3ecf0;
+  position: relative;
+  font-size: 14px;
+}
+section header button {
+  position: absolute;
+  right: 2%;
+  border: 0;
+  background-color: transparent;
+}
+section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+section ul li {
+  border-bottom: 1px solid #1960ae;
+  line-height: 50px;
+}
+section ul li button {
+  position: absolute;
+  border: 0;
+  background-color: transparent;
+  color: red;
+}
+section ul li:nth-last-child(1) {
+  border-bottom: 0;
+}
+.table-condensed {
+  width: 100%;
+  background-color: #e3effb;
+  position: relative;
+}
+.table-condensed thead {
+  background-color: #1960ae;
+}
+.table-condensed thead tr .switch {
+  text-align: center;
+  color: #fff;
+}
+.table-condensed thead .dow {
+  background-color: #e3effb;
+  text-align: center;
+  color: #484647;
+}
+.table-condensed thead:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-width: 8px;
+  border-style: dashed dashed solid dashed;
+  border-color: transparent transparent #1960ae transparent;
+  left: 20px;
+  top: -16px;
+}
+.table-condensed tbody .day {
+  background-color: #c4e1ff;
+  border: 2px solid #e3effb;
+  height: 50px;
+  position: relative;
+  text-align: center;
+  color: #000;
+}
+.table-condensed tbody .day .money {
+  display: block;
+  position: absolute;
+  font-size: 10px;
+  right: 0;
+  bottom: 0;
+  color: #959796;
+}
+.table-condensed tbody .old {
+  color: #b2b2b2;
+}
+.table-condensed tbody .old .money {
+  display: none;
+}
