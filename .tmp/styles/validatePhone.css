@@ -15,4 +15,34 @@
 }
 .validetePhone .checkbox a {
   color: #e71f1b;
+  position: relative;
+}
+.validetePhone .checkbox a:before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  border: 1px solid #8598c7;
+  position: absolute;
+  left: -15px;
+}
+.validetePhone .checkbox input[type="checkbox"] {
+  -webkit-appearance: none;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  border: none;
+  left: 5px;
+  top: -5px;
+  z-index: 100;
+}
+.validetePhone .checkbox input[type="checkbox"]:checked {
+  left: 6px;
+  width: 8px;
+  height: 16px;
+  border-width: 0 2px 3px 0;
+  border-style: solid;
+  border-color: #2c62a6;
+  margin-top: 3px;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
 }

@@ -51,7 +51,7 @@ section ul li:nth-last-child(1) {
   height: 0;
   border-width: 8px;
   border-style: dashed dashed solid dashed;
-  border-color: transparent transparent #1960ae transparent;
+  border-color: transparent transparent #2c62a6 transparent;
   left: 20px;
   top: -16px;
 }
