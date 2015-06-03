@@ -9,3 +9,10 @@
   display: block;
   margin: 0 auto;
 }
+.validetePhone .checkbox {
+  margin-left: 15px;
+  margin-top: 50%;
+}
+.validetePhone .checkbox a {
+  color: #e71f1b;
+}
