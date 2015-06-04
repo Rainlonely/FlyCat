@@ -12,3 +12,10 @@ span em {
 .high-light {
   color: red;
 }
+.return-box table {
+  line-height: 40px;
+}
+.return-box tbody tr td:nth-child(1) {
+  text-align: left;
+  padding-left: 15px;
+}

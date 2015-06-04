@@ -1,13 +1,14 @@
-.validetePhone{
+@import "global.less";
+form{
+	margin-top: 50px;
 	header{
 		font-size: 1.6em;
 		margin: 10px 0;
 	}
 	.row{
 		margin: 10px 0;
-		.btn-validate{
-			display: block;
-			margin: 0 auto;
+		.btn{
+			width: 100%;
 		}
 	}
 	.checkbox{
@@ -21,10 +22,9 @@
 			height: 15px;
 			border: 1px solid #8598c7;
 			position: absolute;
-			left: -15px;
+			left: -20px;
 		}
 		margin-left: 15px;
-		margin-top: 50%;
 		input[type="checkbox"]{
 			-webkit-appearance: none;
 			position: relative;
@@ -35,14 +35,13 @@
 			top: -5px;
 			z-index: 100;
 		}
+		input[type="checkbox"]:active,
+		input[type="checkbox"]:focus{outline: 0;}
 		input[type="checkbox"]:checked {
-		    left: 6px; 
 			width: 8px;
-			height: 16px;
 			border-width: 0 2px 3px 0;
 			border-style: solid;
 			border-color: #2c62a6;
-			margin-top: 3px;
 			-webkit-transform: rotate(45deg);
 			transform: rotate(45deg);
 		}

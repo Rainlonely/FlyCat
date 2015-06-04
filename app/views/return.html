@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>归还设备</title>
+	<link rel="stylesheet" type="text/css" href="../resources/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../resources/css/return.min.css">
+</head>
+<body>
+<nav class="container">
+	<div class="row">
+		<header class="col-xs-12">
+			<span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
+			归还设备
+		</header>	
+	</div>
+</nav>
+<form class="container return-box">
+	<div class="form-group">
+		<label>订单号</label>
+		<div class="order-num">12341234123412341</div>	
+	</div>
+	<div class="form-group">
+		<label>商品清单</label>
+			<table class="table-bordered text-center">
+				<thead>
+					<tr>
+						<th class="col-xs-5">商品名称</th>
+						<th class="col-xs-2">数量</th>
+						<th class="col-xs-3">确认归还</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Wi-Fi设备</td><td>1台</td><td><input type="checkbox" class="checkbox"></td>
+					</tr>
+					<tr>
+						<td>数据线</td><td>1条</td><td></td>
+					</tr>
+					<tr>
+						<td>SIM卡</td><td>1张</td><td></td>
+					</tr>
+					<tr>
+						<td>使用手册</td><td>1本</td><td></td>
+					</tr>
+					<tr></tr>
+				</tbody>
+			</table>			
+	</div>
+	<div class="form-group">
+		<label for="">快递公司</label>
+		<span class="high-light text-right">电话揽件</span>
+		<select name="shipping-company" class="form-control">
+			<option>点击选择</option>
+			<option>顺丰</option>
+			<option>韵达</option>
+			<option>宅急送</option>
+		</select>
+		<span><em>*</em>说明：推荐使用顺丰／如风达两家快递归还设备，不支持daofu，到付邮费会在押金中扣除</span>
+	</div>
+	<div class="form-group">
+		<label for="address-info">门店地址</label>
+		<select name="address-info" class="form-control">
+			<option>点击选择</option>
+			<option>地址1</option>
+			<option>地址2</option>
+			<option>地址3</option>
+		</select>
+	</div>
+	<div class="form-group">
+		<label for="shipping-num">快递单号</label>
+		<input type="text" class="form-control" name="shipping-num" placeholder="请填写快递订单号">
+	</div>
+	<div class="form-group">
+		<label for="message-info">备注说明</label>
+		<textarea class="form-control" placeholder="如果退还时根据收货商品清单，确认有丢失或损坏的，请备注说明（如数据线丢失一条，充电器损坏一个）"></textarea>
+	</div>
+	<div class="form-group">
+		<span><em>*</em>押金退还方式</span>
+		<p>默认返还到用户支付时选择的账户</p>
+	</div>
+	<div class="form-group">
+	<button class="form-control btn-primary">确认退还</button>
+	</div>
+</form>

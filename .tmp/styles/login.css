@@ -1,31 +1,46 @@
-.validetePhone header {
+nav {
+  background-color: #2c62a6;
+}
+nav header {
+  line-height: 40px;
+  color: #fff;
+}
+span em {
+  color: red;
+  padding: 0 5px;
+}
+.high-light {
+  color: red;
+}
+form {
+  margin-top: 50px;
+}
+form header {
   font-size: 1.6em;
   margin: 10px 0;
 }
-.validetePhone .row {
+form .row {
   margin: 10px 0;
 }
-.validetePhone .row .btn-validate {
-  display: block;
-  margin: 0 auto;
+form .row .btn {
+  width: 100%;
 }
-.validetePhone .checkbox {
+form .checkbox {
   margin-left: 15px;
-  margin-top: 50%;
 }
-.validetePhone .checkbox a {
+form .checkbox a {
   color: #e71f1b;
   position: relative;
 }
-.validetePhone .checkbox a:before {
+form .checkbox a:before {
   content: "";
   width: 15px;
   height: 15px;
   border: 1px solid #8598c7;
   position: absolute;
-  left: -15px;
+  left: -20px;
 }
-.validetePhone .checkbox input[type="checkbox"] {
+form .checkbox input[type="checkbox"] {
   -webkit-appearance: none;
   position: relative;
   width: 20px;
@@ -35,14 +50,15 @@
   top: -5px;
   z-index: 100;
 }
-.validetePhone .checkbox input[type="checkbox"]:checked {
-  left: 6px;
+form .checkbox input[type="checkbox"]:active,
+form .checkbox input[type="checkbox"]:focus {
+  outline: 0;
+}
+form .checkbox input[type="checkbox"]:checked {
   width: 8px;
-  height: 16px;
   border-width: 0 2px 3px 0;
   border-style: solid;
   border-color: #2c62a6;
-  margin-top: 3px;
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
 }

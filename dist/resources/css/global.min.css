@@ -1,0 +1,14 @@
+nav {
+  background-color: #2c62a6;
+}
+nav header {
+  line-height: 40px;
+  color: #fff;
+}
+span em {
+  color: red;
+  padding: 0 5px;
+}
+.high-light {
+  color: red;
+}
