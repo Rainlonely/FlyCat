@@ -62,7 +62,8 @@ module.exports = function (grunt) {
                     ".tmp/styles/datetimepicker.min.css": "./bower_components/smalot-bootstrap-datetimepicker/less/datetimepicker.less",
                     ".tmp/styles/login.css": "<%= web.app %>/assets/less/login.less",
                     ".tmp/styles/shopping.css": "<%= web.app %>/assets/less/shopping.less",
-                    ".tmp/styles/return.css": "<%= web.app %>/assets/less/return.less"
+                    ".tmp/styles/return.css": "<%= web.app %>/assets/less/return.less",
+                    ".tmp/styles/checkout.css": "<%= web.app %>/assets/less/checkout.less"
                 }
             }
         },
@@ -247,7 +248,7 @@ module.exports = function (grunt) {
 
             images: {
                 expand: true,
-                cwd: '<%= web.app %>/assets/img',
+                cwd: '<%= web.app %>/assets/images',
                 src: '{,**/}*.{png,jpg,jpeg,gif}',
                 dest: '<%= web.dist %>/resources/images'
             }
@@ -302,7 +303,7 @@ module.exports = function (grunt) {
                 tasks: ['copy:js', 'uglify']
             },
             image :{
-            files: ['<%= web.app %>/assets/img/{,**/}*.png','<%= web.app %>/assets/img/{,**/}*.jpg'],
+            files: ['<%= web.app %>/assets/images/{,**/}*.png','<%= web.app %>/assets/images/{,**/}*.jpg'],
                 tasks: ['copy:images']
             }
         }

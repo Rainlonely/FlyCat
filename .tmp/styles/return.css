@@ -12,6 +12,9 @@ span em {
 .high-light {
   color: red;
 }
+.table-bordered {
+  width: 100%;
+}
 .return-box table {
   line-height: 40px;
 }

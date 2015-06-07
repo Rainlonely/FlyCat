@@ -12,6 +12,9 @@ span em {
 .high-light {
   color: red;
 }
+.table-bordered {
+  width: 100%;
+}
 form {
   margin-top: 50px;
 }
