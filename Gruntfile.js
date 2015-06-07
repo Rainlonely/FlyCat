@@ -63,7 +63,8 @@ module.exports = function (grunt) {
                     ".tmp/styles/login.css": "<%= web.app %>/assets/less/login.less",
                     ".tmp/styles/shopping.css": "<%= web.app %>/assets/less/shopping.less",
                     ".tmp/styles/return.css": "<%= web.app %>/assets/less/return.less",
-                    ".tmp/styles/checkout.css": "<%= web.app %>/assets/less/checkout.less"
+                    ".tmp/styles/checkout.css": "<%= web.app %>/assets/less/checkout.less",
+                    ".tmp/styles/order.css": "<%= web.app %>/assets/less/order.less"
                 }
             }
         },
@@ -175,7 +176,7 @@ module.exports = function (grunt) {
                     // 拷贝jquery js到build目录
                     {
                         expand: true,
-                        cwd: 'bower_components/jquery',
+                        cwd: 'bower_components/jquery/dist',
                         src: ['jquery.*'],
                         dest: '<%= web.dist %>/resources/js'
                     },
