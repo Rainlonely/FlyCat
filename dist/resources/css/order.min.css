@@ -65,3 +65,13 @@ span em {
 .action-box {
   margin-top: 10px;
 }
+.shipping-info,
+.address-info,
+.order-info {
+  border-bottom: 1px solid #9dc4e8;
+  color: #7d7d7d;
+  padding: 5px 0;
+}
+.order-info {
+  color: #333;
+}
