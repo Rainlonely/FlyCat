@@ -60,6 +60,7 @@ module.exports = function (grunt) {
                     ".tmp/styles/fontawesome.css": "./bower_components/fontawesome/less/font-awesome.less",
                     ".tmp/styles/jquery-ui.css": "./bower_components/jqueryui/themes/base/jquery-ui.css",
                     ".tmp/styles/datetimepicker.min.css": "./bower_components/smalot-bootstrap-datetimepicker/less/datetimepicker.less",
+                    ".tmp/styles/home.css": "<%= web.app %>/assets/less/home.less",
                     ".tmp/styles/login.css": "<%= web.app %>/assets/less/login.less",
                     ".tmp/styles/shopping.css": "<%= web.app %>/assets/less/shopping.less",
                     ".tmp/styles/return.css": "<%= web.app %>/assets/less/return.less",
