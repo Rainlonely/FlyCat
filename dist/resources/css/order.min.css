@@ -22,6 +22,7 @@ span em {
 }
 .nav-tabs li {
   background-color: #9dc4e8;
+  padding: 0;
 }
 .nav-tabs li a {
   color: #fff;

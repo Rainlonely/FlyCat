@@ -26,10 +26,13 @@ body {
 .header {
   position: relative;
 }
-.header .text-center {
-  margin-top: -40%;
+.header .start-box {
+  position: absolute;
+  bottom: 80px;
+  text-align: center;
+  width: 100%;
 }
-.header .text-center .btn-tran-blue {
+.header .start-box .btn-tran-blue {
   border: 1px solid #0066cc;
   color: #0066cc;
   padding: 10px 40px;
@@ -37,4 +40,32 @@ body {
 }
 .a:visited {
   color: #0066cc;
+}
+.banner .row {
+  position: relative;
+  margin-bottom: 30px;
+}
+.banner .row:after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #233f6e;
+  top: -25px;
+}
+.banner-name,
+.banner-detail {
+  position: absolute;
+  color: #fff;
+  top: -15px;
+  left: 10px;
+  z-index: 1;
+}
+.banner-detail {
+  bottom: 0;
+  top: auto;
+  width: 100%;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.85);
 }
