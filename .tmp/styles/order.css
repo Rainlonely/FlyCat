@@ -45,6 +45,13 @@ span em {
   margin-top: 0;
   border-bottom: 1px solid #9dc4e8;
 }
+.media .media-left {
+  width: 40px;
+  height: 40px;
+}
+.media .media-left img {
+  width: 100%;
+}
 .media .media-body {
   font-size: 10px;
 }
@@ -75,4 +82,7 @@ span em {
 }
 .order-info {
   color: #333;
+}
+.link-box .row {
+  margin: 10px 0;
 }
