@@ -66,7 +66,8 @@ module.exports = function (grunt) {
                     ".tmp/styles/return.css": "<%= web.app %>/assets/less/return.less",
                     ".tmp/styles/checkout.css": "<%= web.app %>/assets/less/checkout.less",
                     ".tmp/styles/order.css": "<%= web.app %>/assets/less/order.less",
-                    ".tmp/styles/index.css": "<%= web.app %>/assets/less/index.less"
+                    ".tmp/styles/index.css": "<%= web.app %>/assets/less/index.less",
+                    ".tmp/styles/shipping.css": "<%= web.app %>/assets/less/shipping.less"
                 }
             }
         },

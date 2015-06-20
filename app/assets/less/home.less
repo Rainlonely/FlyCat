@@ -28,14 +28,15 @@ body{background-color: #163b7f;}
 .banner{
 	width: 100%;
 	background-image: url('../images/home-banner-h5.png');
-	background-size: cover;
-	min-height: 270px;
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	//min-height: 357px;
 	position: fixed;
 	bottom: 0;
 }
 .start-box{
 	position: absolute;
-	bottom: 35px;
+	//bottom: 30%;
 	text-align: center;
 	width: 100%;
 	.btn-tran-blue{
@@ -45,34 +46,13 @@ body{background-color: #163b7f;}
 		border-radius: 5px;
 	}
 }
-
-// .a:visited{color: #0066cc;}
-// .banner{
-// 	.row{ 
-// 		position: relative;
-// 		margin-bottom: 30px;
-// 	}
-// }
-// .banner .row:after{ 
-// 	content: "";
-// 	position: absolute;
-// 	width: 50px;
-// 	height: 50px;
-// 	border-radius: 50%;
-// 	background-color: #233f6e;
-// 	top: -25px;
-// }
-// .banner-name,.banner-detail{
-// 	position: absolute;
-// 	color: #fff;
-// 	top: -15px;
-// 	left: 10px;
-// 	z-index: 1;
-// }
-// .banner-detail{
-// 	bottom: 0;
-// 	top: auto;
-// 	width: 100%;
-// 	left: 0;
-// 	background-color: rgba(0,0,0,.85);
-// }
+@media srceen and (device-width:320px){
+	.banner{min-height: 460px;}
+}
+@media screen and (min-width:320px) and (max-width:414px){
+	.banner{min-height: 420px;}
+}
+@media screen and (min-width:414px) and (max-width:768px){
+	.banner{min-height: 657px;}
+	.start-box{bottom: 20%;}
+}

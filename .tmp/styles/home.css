@@ -49,14 +49,13 @@ body {
 .banner {
   width: 100%;
   background-image: url('../images/home-banner-h5.png');
-  background-size: cover;
-  min-height: 270px;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
   position: fixed;
   bottom: 0;
 }
 .start-box {
   position: absolute;
-  bottom: 35px;
   text-align: center;
   width: 100%;
 }
@@ -65,4 +64,22 @@ body {
   color: #0066cc;
   padding: 10px 40px;
   border-radius: 5px;
+}
+@media srceen and (device-width: 320px) {
+  .banner {
+    min-height: 460px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 414px) {
+  .banner {
+    min-height: 420px;
+  }
+}
+@media screen and (min-width: 414px) and (max-width: 768px) {
+  .banner {
+    min-height: 657px;
+  }
+  .start-box {
+    bottom: 20%;
+  }
 }

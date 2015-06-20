@@ -1,0 +1,30 @@
+nav {
+  background-color: #2c62a6;
+}
+nav header {
+  line-height: 40px;
+  color: #fff;
+}
+span em {
+  color: red;
+  padding: 0 5px;
+}
+.high-light {
+  color: red;
+}
+.table-bordered {
+  width: 100%;
+}
+.btn-trans-blue {
+  color: #2c62a6;
+  border: 1px solid #2c62a6;
+  background-color: transparent;
+}
+.shipping-box section header {
+  border-bottom: 1px solid #9dc4e5;
+  font-size: 14px;
+  font-weight: bolder;
+}
+.shipping-box section p {
+  color: #a0a0a0;
+}
