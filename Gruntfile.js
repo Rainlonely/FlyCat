@@ -65,7 +65,8 @@ module.exports = function (grunt) {
                     ".tmp/styles/shopping.css": "<%= web.app %>/assets/less/shopping.less",
                     ".tmp/styles/return.css": "<%= web.app %>/assets/less/return.less",
                     ".tmp/styles/checkout.css": "<%= web.app %>/assets/less/checkout.less",
-                    ".tmp/styles/order.css": "<%= web.app %>/assets/less/order.less"
+                    ".tmp/styles/order.css": "<%= web.app %>/assets/less/order.less",
+                    ".tmp/styles/index.css": "<%= web.app %>/assets/less/index.less"
                 }
             }
         },
@@ -166,6 +167,13 @@ module.exports = function (grunt) {
                         cwd: '<%= web.app %>/assets/fonts',
                         dest: '<%= web.dist %>/resources/fonts',
                         src: ['assets/fonts/*' ]
+                    },
+                    // 拷贝bootstrap字体到build目录
+                    {
+                        expand: true,
+                        cwd: 'bower_components/fontawesome/fonts',
+                        src: ['*.*'],
+                        dest: '<%= web.dist %>/resources/fonts'
                     },
                     // 拷贝bootstrap字体到build目录
                     {
