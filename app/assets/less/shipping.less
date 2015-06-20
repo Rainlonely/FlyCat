@@ -5,7 +5,37 @@
 			border-bottom: 1px solid #9dc4e5;
 			font-size: 14px;
 			font-weight: bolder;
+			color: #7d7e80;
 		}
 		p{ color: #a0a0a0;}
+		ul{
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			li{
+				position: relative;
+				border-left: 2px solid #c9c9c9;
+				padding: 5px;
+				font-size: 12px;
+				p{
+					margin-bottom: 0;
+				}
+			}
+			li:before{
+				content: "";
+				position: absolute;
+				width: 6px;
+				height: 6px;
+				border-radius: 3px;
+				left: -4px;
+				top: 11px;
+			}
+			.send:before{
+				background-color: #81c362;
+			}
+			.back:before{
+				background-color: #7dccf5;
+			}
+		}
 	}
 }

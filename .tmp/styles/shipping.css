@@ -24,7 +24,37 @@ span em {
   border-bottom: 1px solid #9dc4e5;
   font-size: 14px;
   font-weight: bolder;
+  color: #7d7e80;
 }
 .shipping-box section p {
   color: #a0a0a0;
+}
+.shipping-box section ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.shipping-box section ul li {
+  position: relative;
+  border-left: 2px solid #c9c9c9;
+  padding: 5px;
+  font-size: 12px;
+}
+.shipping-box section ul li p {
+  margin-bottom: 0;
+}
+.shipping-box section ul li:before {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: 3px;
+  left: -4px;
+  top: 11px;
+}
+.shipping-box section ul .send:before {
+  background-color: #81c362;
+}
+.shipping-box section ul .back:before {
+  background-color: #7dccf5;
 }
