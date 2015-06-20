@@ -1,53 +1,78 @@
 @import 'global.less';
-body{
-	background-color: #fff;
-}
+body{background-color: #163b7f;}
 .header{
-	position: relative;
-	.start-box{
-		position: absolute;
-		bottom: 80px;
-		text-align: center;
-		width: 100%;
-		.btn-tran-blue{
-			border: 1px solid #0066cc;
-			color: #0066cc;
-			padding: 10px 40px;
-			border-radius: 5px;
-			
-
+	overflow: hidden;
+	.row{
+		overflow: hidden;
+		padding-top: 20px;
+		a{
+			height: 40px;
+			width: 40px;
+			color: #fff;
+			display: block;
+			text-align: center;
+			line-height: 40px;
 		}
+		.fa-question {
+			background-color: orange;
+			float: left;
+		}
+		.fa-user{
+			background-color: #00b7ee; 
+			float: right;
+		}
+
 	}
+	
 }
-
-
-.a:visited{color: #0066cc;}
 .banner{
-	.row{ 
-		position: relative;
-		margin-bottom: 30px;
+	width: 100%;
+	background-image: url('../images/home-banner-h5.png');
+	background-size: cover;
+	min-height: 270px;
+	position: fixed;
+	bottom: 0;
+}
+.start-box{
+	position: absolute;
+	bottom: 35px;
+	text-align: center;
+	width: 100%;
+	.btn-tran-blue{
+		border: 1px solid #0066cc;
+		color: #0066cc;
+		padding: 10px 40px;
+		border-radius: 5px;
 	}
 }
-.banner .row:after{ 
-	content: "";
-	position: absolute;
-	width: 50px;
-	height: 50px;
-	border-radius: 50%;
-	background-color: #233f6e;
-	top: -25px;
-}
-.banner-name,.banner-detail{
-	position: absolute;
-	color: #fff;
-	top: -15px;
-	left: 10px;
-	z-index: 1;
-}
-.banner-detail{
-	bottom: 0;
-	top: auto;
-	width: 100%;
-	left: 0;
-	background-color: rgba(0,0,0,.85);
-}
+
+// .a:visited{color: #0066cc;}
+// .banner{
+// 	.row{ 
+// 		position: relative;
+// 		margin-bottom: 30px;
+// 	}
+// }
+// .banner .row:after{ 
+// 	content: "";
+// 	position: absolute;
+// 	width: 50px;
+// 	height: 50px;
+// 	border-radius: 50%;
+// 	background-color: #233f6e;
+// 	top: -25px;
+// }
+// .banner-name,.banner-detail{
+// 	position: absolute;
+// 	color: #fff;
+// 	top: -15px;
+// 	left: 10px;
+// 	z-index: 1;
+// }
+// .banner-detail{
+// 	bottom: 0;
+// 	top: auto;
+// 	width: 100%;
+// 	left: 0;
+// 	background-color: rgba(0,0,0,.85);
+// }

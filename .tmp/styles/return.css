@@ -20,10 +20,16 @@ span em {
   border: 1px solid #2c62a6;
   background-color: transparent;
 }
+.return-box {
+  margin-top: 10px;
+}
 .return-box table {
   line-height: 40px;
 }
 .return-box tbody tr td:nth-child(1) {
   text-align: left;
   padding-left: 15px;
+}
+.return-box tbody tr td:nth-child(3) {
+  padding: 0 40px;
 }
