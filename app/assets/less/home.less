@@ -30,13 +30,13 @@ body{background-color: #163b7f;}
 	background-image: url('../images/home-banner-h5.png');
 	background-size: 100% auto;
 	background-repeat: no-repeat;
-	//min-height: 357px;
+	min-height: 357px;
 	position: fixed;
 	bottom: 0;
 }
 .start-box{
 	position: absolute;
-	//bottom: 30%;
+	bottom: 30%;
 	text-align: center;
 	width: 100%;
 	.btn-tran-blue{
@@ -46,13 +46,13 @@ body{background-color: #163b7f;}
 		border-radius: 5px;
 	}
 }
-@media srceen and (max-width:320px){
-	.banner{min-height: 460px;}
-}
-@media screen and (min-width:320px) and (max-width:414px){
-	.banner{min-height: 420px;}
-}
 @media screen and (min-width:414px) and (max-width:768px){
 	.banner{min-height: 657px;}
 	.start-box{bottom: 20%;}
+}
+@media screen and (min-width:321px) and (max-width:414px){
+	.banner{min-height: 420px;}
+}
+@media srceen and (max-width:320px){
+	.banner{min-height: 460px;}
 }
