@@ -1,5 +1,9 @@
+body {
+  color: #b3b1b1;
+}
 nav {
   background-color: #2c62a6;
+  margin-bottom: 10px;
 }
 nav header {
   line-height: 40px;
