@@ -20,6 +20,9 @@ span em {
   border: 1px solid #2c62a6;
   background-color: transparent;
 }
+.container a {
+  margin: 10px 0;
+}
 .shipping-box section header {
   border-bottom: 1px solid #9dc4e5;
   font-size: 14px;

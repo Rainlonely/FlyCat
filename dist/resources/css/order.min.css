@@ -26,6 +26,7 @@ span em {
 }
 .nav-tabs li a {
   color: #fff;
+  padding: 10px;
 }
 .nav-tabs .active a {
   color: #2e62a7!important;
@@ -85,4 +86,48 @@ span em {
 }
 .link-box .row {
   margin: 10px 0;
+}
+.orderConfirm-box .icon {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #214a7e;
+  background-color: transparent;
+  font-size: 20px;
+  color: #214a7e;
+  line-height: 20px;
+}
+.orderConfirm-box input[type="text"] {
+  border: 1px solid #214a7e;
+  box-shadow: none;
+}
+.orderConfirm-box select {
+  border: 1px solid #214a7e;
+  background-color: transparent;
+  height: 34px;
+}
+.orderConfirm-box label input[type="radio"] {
+  margin-right: 5px;
+}
+.orderConfirm-box .row {
+  line-height: 30px;
+  padding: 5px;
+  border-bottom: 1px solid #9dc4e8;
+}
+.modal-content {
+  border-radius: 0;
+}
+.modal-content .modal-header {
+  background-color: #214a7e;
+  color: #fff;
+}
+.modal-content .modal-body {
+  background-color: #f6fbfc;
+}
+.modal-content .modal-footer {
+  padding: 0 15px;
+  text-align: right;
+  border-top: 0;
+}
+.modal-content .modal-footer .btn + .btn {
+  margin-left: 0;
 }
