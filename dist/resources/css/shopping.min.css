@@ -24,16 +24,17 @@ span em {
   border: 1px solid #2c62a6;
   background-color: transparent;
 }
-section header {
-  line-height: 50px;
-  position: relative;
-  font-size: 14px;
+nav + section {
+  margin-top: -10px;
 }
-section header button {
-  position: absolute;
-  right: 2%;
-  border: 0;
-  background-color: transparent;
+section {
+  font-size: 12px;
+}
+section header {
+  position: relative;
+  font-size: 12px;
+  background-color: #d3ecf0;
+  line-height: 33px;
 }
 section ul {
   list-style: none;
@@ -44,11 +45,15 @@ section ul li {
   border-bottom: 1px solid #1960ae;
   line-height: 50px;
 }
-section ul li button {
+section ul li span {
+  padding-right: 0!important;
+}
+section ul li button.col-xs-2 {
   position: absolute;
   border: 0;
   background-color: transparent;
   color: red;
+  padding: 0;
 }
 section ul li:nth-last-child(1) {
   border-bottom: 0;

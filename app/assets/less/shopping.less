@@ -1,15 +1,12 @@
 @import "global.less";
+nav+section{margin-top: -10px;}
 section{
+	font-size: 12px;
 	header{
-		line-height: 50px;
 		position: relative;
-		font-size: 14px;
-		button{
-			position: absolute;
-			right: 2%;
-			border:0;
-			background-color: transparent;
-		}
+		font-size: 12px;
+		background-color: #d3ecf0;
+		line-height: 33px;
 	}
 	ul{
 		list-style: none;
@@ -18,11 +15,13 @@ section{
 		li{
 			border-bottom: 1px solid #1960ae;
 			line-height: 50px;
-			button{
+			span{padding-right: 0!important;}
+			button.col-xs-2{
 				position: absolute;
 				border:0;
 				background-color: transparent;
 				color: red;
+				padding: 0;
 			}
 		}
 		li:nth-last-child(1){border-bottom: 0; }
