@@ -54,7 +54,12 @@ span em {
   width: 40px;
   height: 40px;
 }
-.media .media-left img {
+.media .media-left a {
+  width: 40px;
+  height: 40px;
+  display: block;
+}
+.media .media-left a img {
   width: 100%;
 }
 .media .media-body {
@@ -108,6 +113,7 @@ span em {
   border: 1px solid #214a7e;
   background-color: transparent;
   height: 34px;
+  margin-top: 3px;
 }
 .orderConfirm-box label input[type="radio"] {
   margin-right: 5px;
@@ -116,6 +122,20 @@ span em {
   line-height: 30px;
   padding: 5px;
   border-bottom: 1px solid #9dc4e8;
+}
+.orderConfirm-box .shipping-info .nav-tabs {
+  border: 0;
+}
+.orderConfirm-box .shipping-info .nav-tabs li {
+  background-color: transparent;
+}
+.orderConfirm-box .shipping-info .nav-tabs li a {
+  border: 0;
+  color: #333;
+  padding-left: 10px;
+}
+.orderConfirm-box .tab-content {
+  line-height: 40px;
 }
 .modal-content {
   border-radius: 0;

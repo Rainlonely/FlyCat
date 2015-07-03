@@ -24,7 +24,7 @@
         <div class="media ">
             <div class="media-left">
                 <a href="#">
-                    <img class="media-object" src="..." alt="..." width="50" height="50">
+                    <img class="media-object" src="../resources/images/icon_moments.png" alt="..." width="50" height="50">
                 </a>
             </div>
             <div class="media-body">
@@ -112,14 +112,32 @@
         </div>
         <div class="row shipping-info">
             <span class="col-xs-6">配送方式</span>
-            <label class="col-xs-3">
-                <input type="radio" name="shipping-method" data-toggle="collapse" href="#byMail" aria-expanded="false" aria-controls="byMail">邮寄
-            </label>
-            <label class="col-xs-3">
-                <input type="radio" name="shipping-method" data-toggle="collapse" href="#bySelf" aria-expanded="false" aria-controls="bySelf">自取
-            </label>
+            <ul class="col-xs-6 nav nav-tabs" role="tablist">
+                <li role="presentation" class="active">
+                
+                    <a href="#byMail" aria-controls="byMail" role="tab" data-toggle="tab"><input type="radio" name="shippingMethod">邮寄</a>
+                </li>
+                <li role="presentation">
+                
+                    <a href="#bySelf" aria-controls="bySelf" role="tab" data-toggle="tab"><input type="radio" name="shippingMethod">自取</a>
+                </li>
+            </ul>
         </div>
-        <div class="row collapse" id="bySelf">
+        <div class="tab-content">
+            <div role="tabpanel" class="tab-pane active" id="byMail">
+                <span class="col-xs-6">选择地址</span>
+                <select class="col-xs-6">
+                    <option>自取点自取</option>
+                    <option>地址二</option>
+                    <option>地址三</option>
+                </select>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="bySelf">
+                <a href="address.html" class="text-center">点击完善地址</a>
+            </div>
+        </div>
+       <!--  <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+        <div class="row collapse" id="bySelf" role="tabpanel" aria-labelledby="mail">
             <span class="col-xs-6">选择地址</span>
             <select class="col-xs-6">
             	<option>自取点自取</option>
@@ -127,9 +145,10 @@
             	<option>地址三</option>
             </select>
         </div>
-        <div class="row collapse" id="byMail">
+        <div class="row collapse" id="byMail" role="tabpanel" aria-labelledby="self">
         	<a href="address.html" class="text-center">点击完善地址</a>
-        </div>	
+        </div> -->
+    </div>
         <div class="row paynow">
         	<button class="btn btn-primary col-xs-12">
         		<span class="col-xs-6 text-left">¥4000</span>

@@ -12,57 +12,73 @@
 
 <body>
 <header>
-    <div class="container">
-        <div class="logo">
+    
+        <div class="logo pull-left">
             <a href="">
-                <img src="../resources/images/logo.png">
+                <img src="../resources/images/logo2.png">
             </a>
         </div>
-        <nav>
+        <nav class="pull-right">
             <ul>
                 <li><a href="">关于我们</a></li>
                 <li><a href="">联系我们</a></li>
                 <li><a href="">预定流程</a></li>
                 <li><a href="">常见问题</a></li>
+                <li><a href=""><i class="fa fa-wechat"></i></a></li>
+                <li><a href=""><i class="fa fa-weibo"></i></a></li>
             </ul>
         </nav>
-    </div>
 </header>
-<div class="banner">
-    <ul class="banner-bg">
-        <li><span></span></li>
-        <li><span></span></li>
-        <li><span></span></li>
-        <li><span></span></li>
-        <li><span></span></li>
-        <li><span></span></li>
-    </ul>
-    <div class="slogn text-center">
-        <img src="../resources/images/logo.png">
-        <p>世界那么大，带我去看看</p>
-        <a href="" class="btn-start" >立即预订</a>
+
+
+<div id="banner" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#banner" data-slide-to="0" class="active"></li>
+    <li data-target="#banner" data-slide-to="1"></li>
+    <li data-target="#banner" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="../resources/images/banner1.png">
     </div>
+    <div class="item">
+      <img src="../resources/images/banner2.png">
+    </div>
+    <div class="item">
+      <img src="../resources/images/banner3.png">
+    </div>
+  </div>
 </div>
 <div class="content">
     <div class="container">
     <div class="row">
-        <div class="col-xs-6">
-            <i class="fa fa-link fa-3x"></i>
+        <div class="col-xs-4">
+            <figure><img src="../resources/images/icon_1.png"></figure>
             <span>支持手机，平板，电脑等多种设备连接</span>
         </div>
-        <div class="col-xs-6">
-            <i class="fa fa-user-secret fa-3x"></i>
+        <div class="col-xs-4">
+            <figure><img src="../resources/images/icon_2.png"></figure>
             <span>专属网络保障信息安全</span>
+        </div>
+        <div class="col-xs-4">
+            <figure><img src="../resources/images/icon_3.png"></figure>
+            <span>支持手机，平板，电脑等多种设备连接</span>
         </div>
     </div>
     <div class="row">
-        <div class="col-xs-6">
-            <i class="fa fa-tags fa-3x"></i>
+        <div class="col-xs-4">
+            <figure><img src="../resources/images/icon_4.png"></figure>
             <span>价格亲民，流量不封顶</span>
         </div>
-        <div class="col-xs-6">
-            <i class="fa fa-trash-o fa-3x"></i>
+        <div class="col-xs-4">
+            <figure><img src="../resources/images/icon_5.png"></figure>
             <span>大容量电池，足足5200mA，可做移动电源</span>
+        </div>
+        <div class="col-xs-4">
+            <figure><img src="../resources/images/icon_6.png"></figure>支持手机，平板，电脑等多种设备连接</span>
         </div>
     </div>
     </div>
@@ -88,6 +104,8 @@
         
     </div>
 </footer>
+<script type="text/javascript" src="../resources/js/jquery.low.min.js"></script>
+<script type="text/javascript" src="../resources/js/bootstrap.min.js"></script>
 </body>
 
 </html>
